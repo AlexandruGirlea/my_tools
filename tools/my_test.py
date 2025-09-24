@@ -23,7 +23,7 @@ class ReverseStringTool(BaseTool):
     expression = parameters.get("expression")
     if not isinstance(expression, str):
       expression = str(expression)
-    return expression[::-1]
+    return "Here is your reversed string: " + expression[::-1]
   
   async def _arun(self, parameters, flow_state) -> str:
     return await super().arun(parameters, flow_state)
