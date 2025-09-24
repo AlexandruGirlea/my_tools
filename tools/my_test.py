@@ -14,9 +14,9 @@ StringArgs = BaseTool.create_args_model("StringArgs", config)
 
 @BaseTool.register_tool("ReverseStringTool")
 class ReverseStringTool(BaseTool):
-  type = "tool"
-  name = "ReverseStringTool"
-  description = "reverse a string"
+  type: str = "tool"
+  name: str = "ReverseStringTool"
+  description: str = "reverse a string"
   args_schema: StringArgs= {}
   
   def _run(self, parameters: StringArgs, flow_state: dict = None) -> str:
