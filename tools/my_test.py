@@ -1,6 +1,6 @@
 import ast
 
-from agentos_common_extn.tools.tool_base import BaseTool
+from agentos_common_extn.app.tools.tool_base import BaseTool
 
 config = {
   "expression": {
