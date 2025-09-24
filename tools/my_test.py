@@ -37,7 +37,7 @@ class ReverseStringTool(BaseTool):
     # Ensure expression is a string
     if not isinstance(expression, str):
       expression = str(expression)
-   
+    breakpoint()
     return "Here is your reversed string: " + expression[::-1]
  
   async def _arun(self, parameters, flow_state) -> str:
