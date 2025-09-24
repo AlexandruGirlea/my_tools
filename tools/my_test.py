@@ -21,6 +21,8 @@ class ReverseStringTool(BaseTool):
   
   def _run(self, parameters: StringArgs, flow_state: dict = None) -> str:
     expression = parameters.get("expression")
+    if not isinstance(expression, str):
+      expression = str(expression)
     return expression[::-1]
   
   async def _arun(self, parameters, flow_state) -> str:
