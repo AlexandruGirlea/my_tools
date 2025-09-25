@@ -1,3 +1,3 @@
-from .my_test import ReverseStringTool, StringArgs
+from .my_test import ReverseStringTool, StringArgs, SystemInfoTool
 
-_all_ = ["ReverseStringTool", "StringArgs"]
+_all_ = ["ReverseStringTool", "StringArgs", "SystemInfoTool"]
